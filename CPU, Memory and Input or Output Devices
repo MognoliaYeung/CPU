@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactions among CPU, Memory and Input/Output Devices</title>
+	<style>
+		th {border: 1px solid black}
+		.c {font size: 3px}
+		div.sticky {
+    		position: -webkit-sticky; /* Safari */
+   			position: sticky;
+    		top: 0;
+    		background-color: green;
+    		border: 2px solid #4CAF50;
+}
+	</style>
+</head>
+<body>
+<div class = "sticky">CS1102 - Course Project - 2022/2023 Semester B</div>
+<div class = "sticky">Group Member</div>
+<h1>Overview</h1>
+<p>The computer receives data and/or instructions, process them, store them for further use or output them to other devices.
+The following figure shows how CPU, storage, input and output units are organized.</p>
+<img src="capture_20230412090807286.bmp" width = "500px" alt = "Coordination of CPU, Memory and I/O Devices">
+<p class = "c">Source: https://www.kullabs.org/class-11/computer-science-1/computer-system/components-of-computer-system?type= </p>
+<h2>Input and Output Units</h2>
+Input units collect data and instructions provided by the user, and convert them into binary numbers that the computer can read, while output units do the opposite.
+<h2>Storage</h2>
+Storage can mainly be divided into two categories: primary memory and secondary memory.
+The sequence of memory retrieval follows the below table from the bottom to the top.
+<br><table>
+	<tr>
+		<th>Register</th>
+	</tr>
+	<tr>
+		<th>Cache Memory</th>
+	</tr>
+	<tr>
+		<th>RAM</th>
+	<tr>
+		<th>Secondary Memory</th>
+	</tr>
+</table>
+</br>
+Data and instructions are first retrieved from hard disks (secondary memory). However, retrieving data from secondary memory in every operation costs a lot time and is inefficient, thus parts of the data that will be soon operated are then stored in random access memory (RAM). Still, because of latency, the speed of data transportation is lower than that of data processing. Thus, cache memory that built inside and near the CPU is employed, which allows more instant retrieval, while with smaller storage. Typically, there are two levels of cache memory. Level 1 cache is built inside the CPU and can store 2 KB to 64 KB of memory. Level 2 cache is a memory card attached outside the CPU, which implies lower retrieval speed, but with larger storage - 256 KB to 2 MB. Registers are the highest-speed temporary built-in storage, with the smallest storage space. They transport data and instructions within CPU and between CPU and RAM.</br>
+<br><img src = "capture_20230412095154590.bmp" alt = "Memory" width="500px"></tr></br>
+<p class = "c"> Source: https://www.educba.com/register-memory/</p>
+<h2> Bibliography</h2>
+<p>https://homepage.cs.uri.edu/faculty/wolfe/book/Readings/Reading04.htm</p>
+<p>https://homepage.cs.uri.edu/faculty/wolfe/book/Readings/Reading05.htm</p>
+<p>https://computer.howstuffworks.com/ram.htm</p>
+
